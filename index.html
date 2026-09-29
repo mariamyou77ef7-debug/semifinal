@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semi-Final</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Glory:ital,wght@0,100..800;1,100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <div class="icon">
+          <img src="./img/Logo.png" alt="logo"/>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Trips</a></li>
+          <li><a href="#">My Bookings</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a href="auth.html" style="text-decoration: none;">
+  <button class="btn-signin"><i class="fa-regular fa-user"></i> Signin</button>
+</a>
+        <button class="btn-book"><i class="fa-solid fa-location-dot"></i> Book Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-container">
+      
+      <!-- Content Left -->
+      <div class="hero-content">
+        <div class="badge">
+          <span class="dot"></span> Egypt's #1 Travel Platform
+        </div>
+        <h1>Discover Egypt's Best <br><span class="highlight">Travel Experiences</span></h1>
+        <p>
+          Journey through ancient wonders and modern marvels. Premium bus travel connecting Egypt's most iconic destinations with unparalleled comfort.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-explore"><i class="fa-solid fa-magnifying-glass"></i> Explore Trips</button>
+          <button class="btn-my-booking"><i class="fa-solid fa-location-dot"></i> My Booking</button>
+        </div>
+      </div>
+
+      <!-- Stats Card Right -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="bar bar-blue"></div>
+          <div class="stat-info">
+            <h3>48+</h3>
+            <p>Active Routes</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="bar bar-green"></div>
+          <div class="stat-info">
+            <h3>120+</h3>
+            <p>Daily Trips</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="bar bar-orange"></div>
+          <div class="stat-info">
+            <h3>4.8</h3>
+            <p>Avg Rating</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<!-- Search Bar -->
+  <div class="search-section">
+    <div class="search-bar">
+      <div class="search-input">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Where to?">
+      </div>
+      <div class="search-input">
+        <i class="fa-regular fa-calendar"></i>
+        <input type="text" placeholder="DD/MM/YY" onfocus="(this.type='date')">
+      </div>
+      <div class="search-input">
+        <i class="fa-regular fa-user"></i>
+        <select>
+          <option value="1">1 Passenger</option>
+          <option value="2">2 Passengers</option>
+          <option value="3">3 Passengers</option>
+        </select>
+      </div>
+      <button class="btn-search-trips">
+        <i class="fa-solid fa-magnifying-glass"></i> Search Trips
+      </button>
+    </div>
+  </div>
+
+  <!-- Popular Routes-->
+  <section class="popular-routes">
+    <div class="container">
+      
+      <!--Header -->
+      <div class="section-header">
+        <span class="badge-tag"><i class="fa-solid fa-star"></i> Featured Trips</span>
+        <h2>Popular Routes Across Egypt</h2>
+        <p>Hand-picked journeys to Egypt's most iconic destinations with premium comfort and unbeatable prices.</p>
+      </div>
+
+      <!-- Cards -->
+      <div class="routes-grid">
+
+        <!-- Card 1 -->
+        <div class="route-card">
+          <div class="card-img">
+            <img src="img/a40ad755756b81ac5503f599f21b95abe293e480.jpg" alt="Cairo to Luxor">
+          </div>
+          <div class="card-body">
+            <div class="card-title-price">
+              <h3>Cairo <span class="arrow">→</span> Luxor</h3>
+              <div class="price">$45 <span>per seat</span></div>
+            </div>
+            <p class="schedule">08:00 AM • VIP Sleeper</p>
+            <div class="rating-seats">
+              <span class="stars">★★★★★ <strong class="rating-num">4.8</strong> <span class="reviews">(234)</span></span>
+              <span class="seats-badge">12 seats left</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn-details">View Details</button>
+              <button class="btn-book-card">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="route-card">
+          <div class="card-img">
+            <img src="c:\Users\Lenovo\Downloads\35e38201ded72c70432b00a206750c4970c21f8b.jpg" alt="Cairo to Aswan">
+          </div>
+          <div class="card-body">
+            <div class="card-title-price">
+              <h3>Cairo <span class="arrow">→</span> Aswan</h3>
+              <div class="price">$45 <span>per seat</span></div>
+            </div>
+            <p class="schedule">07:00 AM • VIP Sleeper</p>
+            <div class="rating-seats">
+              <span class="stars">★★★★★ <strong class="rating-num">4.8</strong> <span class="reviews">(234)</span></span>
+              <span class="seats-badge">12 seats left</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn-details">View Details</button>
+              <button class="btn-book-card">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="route-card">
+          <div class="card-img">
+            <img src="img/a887ee999a58f1e1755774a24c01366ca8f37b4a.jpg" alt="Cairo to Hurghada">
+          </div>
+          <div class="card-body">
+            <div class="card-title-price">
+              <h3>Cairo <span class="arrow">→</span> Hurghada</h3>
+              <div class="price">$45 <span>per seat</span></div>
+            </div>
+            <p class="schedule">07:00 AM • VIP Sleeper</p>
+            <div class="rating-seats">
+              <span class="stars">★★★★★ <strong class="rating-num">4.8</strong> <span class="reviews">(234)</span></span>
+              <span class="seats-badge">12 seats left</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn-details">View Details</button>
+              <button class="btn-book-card">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="route-card">
+          <div class="card-img">
+            <img src="c:\Users\Lenovo\Downloads\51b2e1bd99afb613dbd47268ebcc83ac0756dfd6.jpg" alt="Cairo to Luxor">
+          </div>
+          <div class="card-body">
+            <div class="card-title-price">
+              <h3>Cairo <span class="arrow">→</span> Luxor</h3>
+              <div class="price">$45 <span>per seat</span></div>
+            </div>
+            <p class="schedule">08:00 AM • VIP Sleeper</p>
+            <div class="rating-seats">
+              <span class="stars">★★★★★ <strong class="rating-num">4.8</strong> <span class="reviews">(234)</span></span>
+              <span class="seats-badge">12 seats left</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn-details">View Details</button>
+              <button class="btn-book-card">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="route-card">
+          <div class="card-img">
+            <img src="img/f08007b9983fb1a6dbdae0345b175b4f46b30ed6.jpg" alt="Cairo to Siwa">
+          </div>
+          <div class="card-body">
+            <div class="card-title-price">
+              <h3>Cairo <span class="arrow">→</span> Siwa</h3>
+              <div class="price">$45 <span>per seat</span></div>
+            </div>
+            <p class="schedule">07:00 AM • VIP Sleeper</p>
+            <div class="rating-seats">
+              <span class="stars">★★★★★ <strong class="rating-num">4.8</strong> <span class="reviews">(234)</span></span>
+              <span class="seats-badge">12 seats left</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn-details">View Details</button>
+              <button class="btn-book-card">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="route-card">
+          <div class="card-img">
+            <img src="img/af4d3e20b2557cb234a425fc2e1858ca8f6c5bd4.jpg" alt="Luxor to Aswan">
+          </div>
+          <div class="card-body">
+            <div class="card-title-price">
+              <h3>Luxor <span class="arrow">→</span> Aswan</h3>
+              <div class="price">$45 <span>per seat</span></div>
+            </div>
+            <p class="schedule">07:00 AM • VIP Sleeper</p>
+            <div class="rating-seats">
+              <span class="stars">★★★★★ <strong class="rating-num">4.8</strong> <span class="reviews">(234)</span></span>
+              <span class="seats-badge">12 seats left</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn-details">View Details</button>
+              <button class="btn-book-card">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- View All Button -->
+      <div class="view-all-container">
+        <button class="btn-view-all">View All Trips <i class="fa-solid fa-location-dot"></i></button>
+      </div>
+
+    </div>
+  </section>
+  <!-- Why Choose Us Section -->
+  <section class="why-us">
+    <div class="container">
+      <div class="section-header dark-header">
+        <span class="badge-tag gold-badge"><i class="fa-solid fa-star"></i> Why Choose Us</span>
+        <h2>Travel Smarter With EgyTrips</h2>
+        <p>Everything you need for a seamless, comfortable Egyptian adventure — all in one platform.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-bus"></i></div>
+          <h3>Comfortable Buses</h3>
+          <p>VIP sleeper seats, climate control, and spacious legroom for every journey.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-paper-plane"></i></div>
+          <h3>Easy Booking</h3>
+          <p>Book your seat in under 2 minutes with our streamlined booking process.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Secure Payments</h3>
+          <p>Bank-grade security protects every transaction. Your data is always safe.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Best Destinations</h3>
+          <p>Carefully curated routes to Egypt's most breathtaking cities and landmarks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Destinations-->
+  <section class="featured-destinations">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag orange-light-badge"><i class="fa-solid fa-location-dot"></i> Top Destinations</span>
+        <h2>Featured <span class="highlight-orange">Destinations</span></h2>
+        <p>From ancient pyramids to turquoise beaches, explore Egypt's most breathtaking destinations.</p>
+      </div>
+
+      <div class="destinations-grid">
+        <!-- Card 1 -->
+        <div class="destination-card">
+          <img src="img/7455e0772b3b57a22aeeb726a0c5ec5a60654983.jpg" alt="Giza & Cairo">
+          <div class="dest-badge">Heritage</div>
+          <div class="dest-overlay">
+            <div class="dest-stars">★★★★☆ <span>(1,240)</span></div>
+            <h3>Giza & Cairo</h3>
+            <p>Pyramids, Sphinx & Vibrant City Life</p>
+            <a href="#" class="dest-link">12 trips available &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="destination-card">
+          <img src="img/e33e2912d2141eb7b4a56470e5cca8f0aaba9288.jpg" alt="Giza & Cairo">
+          <div class="dest-badge">Heritage</div>
+          <div class="dest-overlay">
+            <div class="dest-stars">★★★★☆ <span>(1,240)</span></div>
+            <h3>Giza & Cairo</h3>
+            <p>Pyramids, Sphinx & Vibrant City Life</p>
+            <a href="#" class="dest-link">12 trips available &rarr;</a>
+          </div>
+        </div>
+
+        <!--Card 3 -->
+        <div class="destination-card">
+          <img src="img/e31fad7224154fa746d22b4e38070e6acfc83ad1.jpg" alt="Giza & Cairo">
+          <div class="dest-badge">Heritage</div>
+          <div class="dest-overlay">
+            <div class="dest-stars">★★★★☆ <span>(1,240)</span></div>
+            <h3>Giza & Cairo</h3>
+            <p>Pyramids, Sphinx & Vibrant City Life</p>
+            <a href="#" class="dest-link">12 trips available &rarr;</a>
+          </div>
+        </div>
+
+        <!--Card 4 -->
+        <div class="destination-card">
+          <img src="img/d8c43e4e890a58c49f31312ea01136e1c4281f04.jpg" alt="Giza & Cairo">
+          <div class="dest-badge">Heritage</div>
+          <div class="dest-overlay">
+            <div class="dest-stars">★★★★☆ <span>(1,240)</span></div>
+            <h3>Giza & Cairo</h3>
+            <p>Pyramids, Sphinx & Vibrant City Life</p>
+            <a href="#" class="dest-link">12 trips available &rarr;</a>
+          </div>
+        </div>
+
+        <!--Card 5 -->
+        <div class="destination-card">
+          <img src="img/d6ab47e7cf7c616e2ffa7d8c630f8233560f79b4.jpg" alt="Giza & Cairo">
+          <div class="dest-badge">Heritage</div>
+          <div class="dest-overlay">
+            <div class="dest-stars">★★★★☆ <span>(1,240)</span></div>
+            <h3>Giza & Cairo</h3>
+            <p>Pyramids, Sphinx & Vibrant City Life</p>
+            <a href="#" class="dest-link">12 trips available &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="destination-card">
+          <img src="img/ef2007b3688ee5b20ef062ebbb77b0df5df4cfc9.jpg" alt="Giza & Cairo">
+          <div class="dest-badge">Heritage</div>
+          <div class="dest-overlay">
+            <div class="dest-stars">★★★★☆ <span>(1,240)</span></div>
+            <h3>Giza & Cairo</h3>
+            <p>Pyramids, Sphinx & Vibrant City Life</p>
+            <a href="#" class="dest-link">12 trips available &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-image">
+          <img src="img/2026-09-29 221647.png" alt="Egyptian Adventure">
+        </div>
+        <div class="cta-content">
+          <h2>Ready for Your Egyptian Adventure?</h2>
+          <p>Join 50,000+ travelers who have already discovered the magic of Egypt with us. Book your trip today.</p>
+          <button class="btn-cta">Book a Trip &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Testimonials-->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag orange-light-badge"><i class="fa-solid fa-quote-left"></i> Traveler Stories</span>
+        <h2>What Our Travelers <span class="highlight-orange">Say</span></h2>
+        <p>Real stories from people who explored Egypt with us.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Card 1 -->
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            "EgyTrips made our Cairo to Luxor journey absolutely magical. The VIP sleeper bus was immaculate, the seats were incredibly comfortable, and the on-board service was top notch. Will definitely book again!"
+          </p>
+          <div class="user-info">
+            <img src="img/8e3bddcd6ed878a3e593fd2cda4976fcb08c7c60.jpg" alt="Sarah">
+            <div class="user-details">
+              <h4>Sarah</h4>
+              <span>Travel Blogger</span>
+            </div>
+            <div class="user-rating">
+              <div class="stars">★★★★★</div>
+              <span class="route">Cairo &ndash; Luxor</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            "EgyTrips made our Cairo to Luxor journey absolutely magical. The VIP sleeper bus was immaculate, the seats were incredibly comfortable, and the on-board service was top notch. Will definitely book again!"
+          </p>
+          <div class="user-info">
+            <img src="img/8e3bddcd6ed878a3e593fd2cda4976fcb08c7c60.jpg" alt="Sarah">
+            <div class="user-details">
+              <h4>Sarah</h4>
+              <span>Travel Blogger</span>
+            </div>
+            <div class="user-rating">
+              <div class="stars">★★★★★</div>
+              <span class="route">Cairo &ndash; Luxor</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            "EgyTrips made our Cairo to Luxor journey absolutely magical. The VIP sleeper bus was immaculate, the seats were incredibly comfortable, and the on-board service was top notch. Will definitely book again!"
+          </p>
+          <div class="user-info">
+            <img src="img/8e3bddcd6ed878a3e593fd2cda4976fcb08c7c60.jpg" alt="Sarah">
+            <div class="user-details">
+              <h4>Sarah</h4>
+              <span>Travel Blogger</span>
+            </div>
+            <div class="user-rating">
+              <div class="stars">★★★★★</div>
+              <span class="route">Cairo &ndash; Luxor</span>
+            </div>
+          </div>
+        </div>
+
+        <!--  Card 4 -->
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            "EgyTrips made our Cairo to Luxor journey absolutely magical. The VIP sleeper bus was immaculate, the seats were incredibly comfortable, and the on-board service was top notch. Will definitely book again!"
+          </p>
+          <div class="user-info">
+            <img src="img/8e3bddcd6ed878a3e593fd2cda4976fcb08c7c60.jpg" alt="Sarah">
+            <div class="user-details">
+              <h4>Sarah</h4>
+              <span>Travel Blogger</span>
+            </div>
+            <div class="user-rating">
+              <div class="stars">★★★★★</div>
+              <span class="route">Cairo &ndash; Luxor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <!-- Brand -->
+      <div class="footer-col footer-brand">
+        <div class="logo">
+          <div class="logo">
+            <img src="./img/Logo.png"  alt="logo"/>
+          </div>
+        </div>
+        <p>Egypt's premier travel platform, connecting you to the most beautiful destinations across the land of the pharaohs.</p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!--Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">All Trips</a></li>
+          <li><a href="#">My Bookings</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!--Top -->
+      <div class="footer-col">
+        <h3>Top Destinations</h3>
+        <ul>
+          <li><a href="#">Luxor</a></li>
+          <li><a href="#">Aswan</a></li>
+          <li><a href="#">Hurghada</a></li>
+          <li><a href="#">Siwa Oasis</a></li>
+          <li><a href="#">Alexandria</a></li>
+          <li><a href="#">Sharm El-Sheikh</a></li>
+        </ul>
+      </div>
+
+      <!-- Contac Us -->
+      <div class="footer-col footer-contact">
+        <h3>Contact Us</h3>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>15 Tahrir Square, Cairo, Egypt</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-regular fa-envelope"></i>
+          <span>hello@egytrips.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+20 100 123 4567</span>
+        </div>
+
+        <div class="newsletter">
+          <label>Subscribe for travel deals</label>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email">
+            <button>Join</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container bottom-container">
+        <p>&copy; 2026 EgyTrips. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
